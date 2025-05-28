@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🛍️ Eclypse - E-Commerce Webpage (Internship Assignment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 **Live Demo:** [https://eclypse-1xsw.vercel.app/](https://eclypse-1xsw.vercel.app/)
 
-Currently, two official plugins are available:
+This is a full-stack e-commerce webpage built as part of an internship assignment. The goal was to recreate a Figma design using **React**, **TailwindCSS**, **TypeScript**, and a basic **Node.js backend** with dummy data endpoints.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+- ✅ React
+- ✅ TypeScript
+- ✅ TailwindCSS
+- ✅ Framer Motion (animations)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Backend
+- ✅ Node.js
+- ✅ Express.js
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Folder Structure
+project/
+├── frontend/ # React + TypeScript + TailwindCSS
+└── backend/ # Node.js + Express server with dummy API
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## ✨ Features
+
+- Responsive and mobile-friendly layout
+- TailwindCSS for fast and modern styling
+- Framer Motion for animations and transitions
+- Dummy API integration with Express.js
+- Functional product listing with dynamic rendering
+- Clean and modular TypeScript components
+
+---
+
+## 🧑‍💻 Installation Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/eclypse-assignment.git
+cd eclypse-assignment
+
+cd frontend
+npm install
+npm run dev
+
+*cd backend
+npm install
+node index.js
