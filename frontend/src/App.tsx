@@ -8,7 +8,7 @@ import ProductShowcase from "./components/ProductShowcase";
 import Testimonials from "./components/Testimonials";
 import Accordian from "./components/Accordion";
 import CheckOutForm from "./components/CheckOutForm";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 
 const App: React.FC = () => {
